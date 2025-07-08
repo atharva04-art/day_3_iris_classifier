@@ -22,3 +22,10 @@ Using `load_iris()` from `sklearn.datasets`
 ### 2. Prepare Data
 - Features: Sepal & Petal measurements
 - Target: Flower species
+- Split: 80% training, 20% testing
+
+### 3. Train Model
+```python
+from sklearn.linear_model import LogisticRegression
+model = LogisticRegression(max_iter=200)
+model.fit(X_train, y_train)
